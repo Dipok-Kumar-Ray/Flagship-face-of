@@ -5,11 +5,13 @@ import Footer from '../Components/Footer';
 
 const MainLayout = () => {
     return (
-        <div>
+        <>
           <Navbar/>
-          <Outlet/>
-          <Footer/>
+        <div className='bg-amber-300 min-h-[calc(100vh-112px)]'>
+        <Outlet/>
         </div>
+          <Footer/>
+        </>
     );
 };
 
