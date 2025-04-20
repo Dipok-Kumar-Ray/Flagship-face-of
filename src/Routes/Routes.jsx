@@ -16,7 +16,8 @@ import About from "../Pages/About";
     children: [
         {
             path:'/',
-           Component: Home
+           Component: Home,
+           loader: ()=> fetch('phones.json')
         },
         {
             path:'/favorites',
@@ -27,7 +28,7 @@ import About from "../Pages/About";
             Component: About
         },
         {
-            path:'/phonesDetails',
+            path:'/phone-details',
             Component: PhoneDetails
         },
       ]

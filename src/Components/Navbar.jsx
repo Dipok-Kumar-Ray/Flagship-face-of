@@ -5,7 +5,7 @@ import { MdBookmarkAdd } from "react-icons/md";
 
 const Navbar = () => { 
     return (
-        <div className="navbar p-0 bg-base-100 shadow-sm mx-w-screen-2xl mx-auto px-8 md:mx-12 lg:mx-16 xl:mx-24">
+        <div className="navbar p-0 bg-base-100 shadow-sm mx-w-screen-2xl mx-auto px-8 md:mx-12 lg:mx-16 ">
   <div className="navbar-start">
     <div className="dropdown">
       <div tabIndex={0} role="button" className="btn cursor-pointer mr-2 lg:hidden">
