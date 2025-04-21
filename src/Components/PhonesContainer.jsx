@@ -2,7 +2,8 @@
 
 import React, { useEffect, useState } from 'react'
  import PhoneCard from './PhoneCard'
- import Button from './shared/Button'
+import Button from './ui/Button'
+ 
  
  const PhonesContainer = ({ phones }) => {
    const [displayPhones, setDisplayPhones] = useState([])

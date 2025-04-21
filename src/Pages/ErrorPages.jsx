@@ -1,14 +1,16 @@
 import React from 'react'
 import { Link, useRouteError } from 'react-router'
+import Button from '../Components/ui/Button'
+// import Navbar from '../Components/Navbar'
 // import Navbar from '../components/Navbar'
-import Button from '../components/shared/Button'
+// import Button from '../components/shared/Button'
 
 const ErrorPages = () => {
   const error = useRouteError()
 
   return (
     <>
-      <Navbar />
+      {/* <Navbar/> */}
       <div className='py-24 text-center'>
         <h1 className='mb-8 text-7xl font-thin text-gray-900'>
           {error?.status || 404}

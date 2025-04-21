@@ -1,9 +1,11 @@
 import React, { useContext } from 'react';
 import { useLoaderData, useParams } from 'react-router';
-import Button from '../components/shared/Button'
+
  import { MdAddShoppingCart, MdBookmarkAdd } from 'react-icons/md'
- import { addFavorite, addToCart, getCart } from '../utils'
+//  import { addFavorite, addToCart, getCart } from '../utils'
 import { CartContext } from '../providers/Contexts';
+import Button from '../Components/ui/Button';
+import { addFavorite, addToCart, getCart } from '../Components/utils';
 
 
 
