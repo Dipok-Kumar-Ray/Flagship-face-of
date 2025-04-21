@@ -17,6 +17,7 @@ import About from "../Pages/About";
         {
             path:'/',
            Component: Home,
+           hydrateFallbackElement:<p>Loading please wait...</p>,
            loader: ()=> fetch('phones.json')
         },
         {
@@ -28,7 +29,9 @@ import About from "../Pages/About";
             Component: About
         },
         {
-            path:'/phone-details',
+            path:'/phone-details/:id',
+            loader: () => fetch('../phones.json'),
+            hydrateFallbackElement:<p>Loading, please wait.....</p>,
             Component: PhoneDetails
         },
       ]
